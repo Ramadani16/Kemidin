@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan</title>
+    <style>
+        body{
+            margin: 0;
+            padding:0;
+            background : url(download.jpg);
+            background-size: 100vh;
+            background-position: center;
+           
+            
+        }
+        h2{
+            font-size: 35px;
+            font-style: bold;
+            text-align: center;
+            margin-top: 80px;
+        }
+        form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgb(0, 0, 0,0.5);
+            padding: 25px;
+            width: 300px;
+            box-shadow: 0 0 10px 5px black;
+            
+          }
+          
+
+        label {
+            font-size: 20px ;
+            color: #ffffff ;
+            display:block;
+            margin-bottom: 10px;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            padding: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            width: 200px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #ffffff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+        div{
+            background-position: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <h2>Menu Pemesanan</h2>
+        
+        <form action="pemesanan.php" method="post">
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" name="nama" required><br>
+          <label for="menu">Menu:</label>
+          <select id="menu" name="menu" required>
+            <option value="">Pilih menu</option>
+            <option value="Burger">Burger</option>
+            <option value="Pizza">Pizza</option>
+            <option value="Spaghetti">Spaghetti</option>
+            <option value="Hotdog">Hotdog</option>
+            <option value="French Fries">French Fries</option>
+          </select><br>
+          
+          <label for="jumlah">Jumlah:</label>
+          <input type="number" id="jumlah" name="jumlah" required><br>
+          <input type="submit" value="Pesan">
+        </form>
+      </section>
+      <Script src="script.js"></Script>
+      
+  
+</body>
+</html>
