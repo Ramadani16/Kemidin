@@ -1,3 +1,4 @@
+@media only screen and (max-width: 767px){
 body{
     margin: 0;
     padding:0;
@@ -6,20 +7,9 @@ body{
     background-size: 100vh;
     background-position: center;
    
-    
+}   
 }
- @media only screen and (min-width: 768px) {
-      body {
-        background-color: lightblue;
-      }
-    }
-    
-    /* Gaya khusus untuk perangkat mobile */
-    @media only screen and (max-width: 767px) {
-      body {
-        background-color: lightpink;
-      }
-    }
+
 header {
   background-color: #685656;
   padding: 20px;
